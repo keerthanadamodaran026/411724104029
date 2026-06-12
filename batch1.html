@@ -1,7 +1,16 @@
-<!DOCTYPE html>
+<!DOCTYPE html>    
+</body>
+</html>
 <html>
 <head>
     <title>Website</title>
+    <link rel="stylesheet" href="batch1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <style>
+        body{
+            color:rgb(0, 34, 255);
+        }
+    </style> -->
 </head>
 <body>
 
@@ -10,33 +19,37 @@
     </center>
 
     <hr>
-
+    <nav>
+        <a href="">Home</a>
+        <a href="">Contact</a>
+    </nav>
     <h2>Paragraph</h2>
-    <p>This is a sample paragraph.</p>
+    <p id="p1" class="pclass">This is a sample paragraph.</p>
+    <p id="p2">Paragraph 2</p>
 
     <hr>
 
     <h2>Headings</h2>
-    <h1>Heading 1</h1>
+    <h1 class="pclass">Heading 1</h1>
     <h2>Heading 2</h2>
     <h3>Heading 3</h3>
     <h4>Heading 4</h4>
     <h5>Heading 5</h5>
     <h6>Heading 6</h6>
 
-    <hr>
+  
 
     <h2>Image</h2>
-    <img src="naruto.jpg" alt="Naruto" width="300">
+    <div><img src="naruto.jpg" alt="Naruto" width="300"></div>
 
-    <hr>
+    <div>
+        <h2>Video</h2>
+        <video controls>
+            <source src="java.mp4" type="video/mp4">
+        </video>
+    </div>
+    
 
-    <h2>Video</h2>
-    <video width="400" controls>
-        <source src="java.mp4" type="video/mp4">
-    </video>
-
-    <hr>
 
     <h2>Ordered List</h2>
     <ol>
@@ -116,6 +129,15 @@
 
         </form>
     </fieldset>
+    <div class="grid">
+        <div id="a">1</div>
+        <div id="b">2</div>
+        <div id="c">3</div>
+        <div id="d">4</div>
+        <div id="e">5</div>
+        <div id="f">6</div>
+    </div>
+    
 
 </body>
 </html>
