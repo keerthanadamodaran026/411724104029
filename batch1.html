@@ -13,7 +13,6 @@
     </style> -->
 </head>
 <body>
-
     <center>
         <h1>My Website</h1>
     </center>
@@ -40,6 +39,7 @@
   
 
     <h2>Image</h2>
+    
     <div><img src="naruto.jpg" alt="Naruto" width="300"></div>
 
     <div>
@@ -99,7 +99,7 @@
         <form>
 
             <label>Name:</label>
-            <input type="text">
+            <input onchange="example()" id="inp" type="text">
             <br><br>
 
             <label>Email:</label>
@@ -125,7 +125,7 @@
 
             <br><br>
 
-            <button type="submit">Submit</button>
+            <button onclick="alert('clicked')">Submit</button>
 
         </form>
     </fieldset>
@@ -137,7 +137,21 @@
         <div id="e">5</div>
         <div id="f">6</div>
     </div>
-    
-
+    <script>
+        console.log("Hello");
+        const first=document.getElementById("p1");
+        first.innerHTML="Some text";
+        function example()
+        {
+            console.log("Hello");
+        }
+        const input=document.getElementById("input");
+        const output=document.getElementById("Output");
+        input.addEventListener("input",()=>{
+            output.textContent=input.value;
+        })
+    </script>
 </body>
+
+
 </html>
